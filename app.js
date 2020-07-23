@@ -1869,367 +1869,367 @@ function calcCircumfrence(radius) {
   calcArea(10);
 
 
-  // //chapter 38 to 42
+  // chapter 38 to 42
 
 
-// // 1. Write a custom function power ( a, b ), to calculate the value of
-// // a raised to b.
+//  1. Write a custom function power ( a, b ), to calculate the value of
+// a raised to b.
 
 
-// function power(a,b){
-//     ans=a**b;
-//     document.write(ans);
-// }
+ function power(a,b){
+     ans=a**b;
+     document.write(ans);
+ }
 
-// power(5,2);
-
-
-// // Any year is entered through the keyboard. Write a function to
-// // determine whether the year is a leap year or not.
-
-// function leap_year(){
-//     year=prompt("Enter year :");
-//     if(year%4==0){
-//         document.write("Leap year <br>");
-//     }
-//     else{
-//         document.write("Not leap Year <br>");
-//     }
-// }
-
-// leap_year();
+ power(5,2);
 
 
+// Any year is entered through the keyboard. Write a function to
+//  determine whether the year is a leap year or not.
 
-// // 3. If the lengths of the sides of a triangle are denoted by a, b, and
-// // c, then area of triangle is given by
-// // area = S(S − a)(S − b)(S − c)
-// // where, S = ( a + b + c ) / 2
+ function leap_year(){
+     year=prompt("Enter year :");
+     if(year%4==0){
+         document.write("Leap year <br>");
+     }
+     else{
+         document.write("Not leap Year <br>");
+     }
+ }
 
-
-// function triangle(a,b,c){
-//   function sum(a,b,c){
-//       ans=(a+b+c)/2
-//       return ans
-//   }
-//     s=sum(a,b,c)
-//     area=s*(s-a)*(s-b)*(s-c);
-//     document.write("Area of triangle "+area+"<br>");
-
-// }
-
-// triangle(1,2,5);
+ leap_year();
 
 
 
-// // Write a function that receives marks received by a student in 3
-// // subjects and returns the average and percentage of these
-// // marks. there should be 3 functions one is the mainFunction
-// // and other are for average and percentage. Call those functions
-// // from mainFunction and display result in mainFunction.
+// 3. If the lengths of the sides of a triangle are denoted by a, b, and
+//  c, then area of triangle is given by
+//  area = S(S − a)(S − b)(S − c)
+//  where, S = ( a + b + c ) / 2
 
 
-// function student(marks1,marks2,marks3){
+ function triangle(a,b,c){
+   function sum(a,b,c){
+       ans=(a+b+c)/2
+       return ans
+   }
+     s=sum(a,b,c)
+     area=s*(s-a)*(s-b)*(s-c);
+     document.write("Area of triangle "+area+"<br>");
 
-//     function average(marks1,marks2,marks3)
-//     {
-//         ans = (marks1+marks2+marks3)/3;
-//         return ans;
-//     }
+ }
 
-//     function percentage(marks1,marks2,marks3){
-//         ans_per= ((marks1+marks2+marks3)/300)*100;
-//         return ans_per;
-//     }
-
-//     avg=average(marks1,marks2,marks3);
-//     perce=percentage(marks1,marks2,marks3);
-//     document.write("Percentage of marks "+perce+"<br> Average marks "+avg);
-// }
-
-// student(50,50,50);
+ triangle(1,2,5);
 
 
-// // You have learned the function indexOf. Code your own custom
-// // function that will perform the same functionality. You can code
-// // for single character as of now.
 
-// function index(str,word){
-//     count=0;
-//     arr=str.split(" ");
+// Write a function that receives marks received by a student in 3
+// subjects and returns the average and percentage of these
+//  marks. there should be 3 functions one is the mainFunction
+//  and other are for average and percentage. Call those functions
+//  from mainFunction and display result in mainFunction.
+
+
+ function student(marks1,marks2,marks3){
+
+     function average(marks1,marks2,marks3)
+    {
+         ans = (marks1+marks2+marks3)/3;
+         return ans;
+    }
+
+     function percentage(marks1,marks2,marks3){
+         ans_per= ((marks1+marks2+marks3)/300)*100;
+         return ans_per;
+    }
+
+     avg=average(marks1,marks2,marks3);
+     perce=percentage(marks1,marks2,marks3);
+     document.write("Percentage of marks "+perce+"<br> Average marks "+avg);
+ }
+
+ student(50,50,50);
+
+
+// You have learned the function indexOf. Code your own custom
+//  function that will perform the same functionality. You can code
+// for single character as of now.
+
+ function index(str,word){
+     count=0;
+     arr=str.split(" ");
     
-//     for (i=0;i<arr.length;i++){
-//         if(word==arr[i]){
-//             ind=i+count;
-//             break;
-//         }
-//         count =count+1
-//     }
-//     document.write("Index of "+word+" is "+ind);
-// }
+     for (i=0;i<arr.length;i++){
+         if(word==arr[i]){
+             ind=i+count;
+             break;
+         }
+         count =count+1
+     }
+     document.write("Index of "+word+" is "+ind);
+ }
 
-// index("Muhammad Mehran Bin Azam","Muhammad");
-
-
-
-// // 6. Write a function to delete all vowels from a sentence. Assume
-// // that the sentence is not more than 25 characters long.
+ index("Muhammad Noman Ashraf","Muhammad");
 
 
-// function remove_vowels(sentence){
-//     var strings = ["bongo drums", "guitar", "flute", "double bass", "xylophone","piano"];           
-//     var string = strings.map(x => x.replace(/[aeiou]/g, ''));
-//     document.write(string);
-// }
-// remove_vowels("Mehran bin Azam");
+
+// 6. Write a function to delete all vowels from a sentence. Assume
+// that the sentence is not more than 25 characters long.
 
 
-// // Write a function with switch statement to count the number of
-// // occurrences of any two vowels in succession in a line of text.
-// // For example, in the sentence
-// // FUNCTIONS, switch statements, while… do-while loops | JAVASCRIPT
-// // Page 2 of 2
-// // “Pleases read this application and give me gratuity”
-// // Such occurrences are ea, ea, ui.
+ function remove_vowels(sentence){
+     var strings = ["bongo drums", "guitar", "flute", "double bass", "xylophone","piano"];           
+     var string = strings.map(x => x.replace(/[aeiou]/g, ''));
+     document.write(string);
+ }
+ remove_vowels("Noman Ashraf");
 
-// function findOccurrences() {
-//     var str = "Pleases read this application and give me gratuity";
-//     var count = 0;
-//     let haveSeenVowel = false;
+
+// Write a function with switch statement to count the number of
+//  occurrences of any two vowels in succession in a line of text.
+// For example, in the sentence
+//  FUNCTIONS, switch statements, while… do-while loops | JAVASCRIPT
+// Page 2 of 2
+//  “Pleases read this application and give me gratuity”
+//  Such occurrences are ea, ea, ui.
+
+ function findOccurrences() {
+     var str = "Pleases read this application and give me gratuity";
+     var count = 0;
+    let haveSeenVowel = false;
   
-//     for (const letter of str.toLowerCase()) {
-//       switch (letter) {
-//         case 'a':
-//         case 'e':
-//         case 'i':
-//         case 'o':
-//         case 'u':
-//           {
-//             if (haveSeenVowel) {
-//               count++;
-//               haveSeenVowel = false;
-//             } else {
-//               haveSeenVowel = true;
-//             }
-//             break;
-//           }
-//         default:
-//           haveSeenVowel = false
-//       }
-//     }
+     for (const letter of str.toLowerCase()) {
+       switch (letter) {
+         case 'a':
+         case 'e':
+        case 'i':
+        case 'o':
+         case 'u':
+          {
+            if (haveSeenVowel) {
+               count++;
+               haveSeenVowel = false;
+             } else {
+               haveSeenVowel = true;
+             }
+            break;
+          }
+         default:
+          haveSeenVowel = false
+       }
+     }
   
-//     document.write(count);
-//   }
+    document.write(count);
+   }
   
-//   findOccurrences();
+   findOccurrences();
 
 
 
 
-// // The distance between two cities (in km.) is input through the
-// // keyboard. Write four functions to convert and print this
-// // distance in meters, feet, inches and centimeters.
+// The distance between two cities (in km.) is input through the
+//  keyboard. Write four functions to convert and print this
+//  distance in meters, feet, inches and centimeters.
 
 
-// function distance(km){
+ function distance(km){
 
-//     function meter(km){
-//         m = km * 1000;
-//         return m;
-//     }
+     function meter(km){
+         m = km * 1000;
+         return m;
+     }
 
-//     function feet(km){
-//         f = km * 3280.84;
-//         return f;
-//     }
+     function feet(km){
+         f = km * 3280.84;
+         return f;
+     }
 
-//     function incehs(km){
-//         inc = km * 39370.08;
-//         return inc;
-//     }
+     function incehs(km){
+         inc = km * 39370.08;
+         return inc;
+     }
 
-//     function cms(km){
-//         cm = km * 1000 * 100;
-//         return cm;
-//     }
+     function cms(km){
+         cm = km * 1000 * 100;
+         return cm;
+     }
 
-//     document.write("Distance in km "+km+"<br>");
-//     document.write("Distance in meters "+meter(km)+"<br>");
-//     document.write("Distance in inches "+incehs(km)+"<br>");
-//     document.write("Distance in feets "+feet(km)+"<br>");
-//     document.write("Distance in centimeters "+cms(km)+"<br>");
+     document.write("Distance in km "+km+"<br>");
+     document.write("Distance in meters "+meter(km)+"<br>");
+     document.write("Distance in inches "+incehs(km)+"<br>");
+     document.write("Distance in feets "+feet(km)+"<br>");
+     document.write("Distance in centimeters "+cms(km)+"<br>");
 
-// }
+ }
 
-// distance(100);
+ distance(100);
 
 
 
-// // Write a program to calculate overtime pay of employees.
-// // Overtime is paid at the rate of Rs. 12.00 per hour for every hour
-// // worked above 40 hours. Assume that employees do not work
-// // for fractional part of an hour.
+//  Write a program to calculate overtime pay of employees.
+//  Overtime is paid at the rate of Rs. 12.00 per hour for every hour
+//  worked above 40 hours. Assume that employees do not work
+//  for fractional part of an hour.
 
-// function overtime(hours){
-//  if(hours>40){
-//      rate=12.00*hours;
-//      return rate;
-//  }
-// }
+ function overtime(hours){
+  if(hours>40){
+      rate=12.00*hours;
+      return rate;
+ }
+ }
 
 // document.write("Rate per hour "+overtime(45)+" <br>");
 
 
 
-// // 10. A cashier has currency notes of denominations 10, 50 and
-// // 100. If the amount to be withdrawn is input through the
-// // keyboard in hundreds, find the total number of currency notes
-// // of each denomination the cashier will have to give to the
-// // withdrawer.
+//  10. A cashier has currency notes of denominations 10, 50 and
+// 100. If the amount to be withdrawn is input through the
+//  keyboard in hundreds, find the total number of currency notes
+//  of each denomination the cashier will have to give to the
+//  withdrawer.
 
 
-// function cashier(){
-//     amount=prompt("Enter amount for cash notes :");
-//     document.write("Amount in hundred : "+ parseInt(amount/100) +"<br>");
-//     document.write("Amount in 50 : "+ parseInt((amount % 100) / 50) +"<br>");
-//     document.write("Amount in 10 : "+ parseInt((((amount % 100) % 50) / 10)) +"<br>");
-//     document.write("Remaining amount : "+ parseInt((((amount % 100) % 50) % 10)) +"<br>");
+ function cashier(){
+    amount=prompt("Enter amount for cash notes :");
+     document.write("Amount in hundred : "+ parseInt(amount/100) +"<br>");
+     document.write("Amount in 50 : "+ parseInt((amount % 100) / 50) +"<br>");
+     document.write("Amount in 10 : "+ parseInt((((amount % 100) % 50) / 10)) +"<br>");
+    document.write("Remaining amount : "+ parseInt((((amount % 100) % 50) % 10)) +"<br>");
     
 
-// }
+ }
 
-// cashier();
+ cashier();
 
-// // capter 43 to 48
+//  capter 43 to 48
 
-// // 1. Show an alert box on click on a link.
-// // 2. Display some Mobile images in browser. On click on an
-// // image Show the message in alert to user.
-
-
-// function purchase(){
-//     alert("Thanks for purchasing a phone from us");
-// }
-
-// // 3. Display 10 student records in table and each row should contain a delete
-// // button. If you click on a button to delete a record, entire row should be
-// // deleted.
+//  1. Show an alert box on click on a link.
+//  2. Display some Mobile images in browser. On click on an
+//  image Show the message in alert to user.
 
 
-// function deleteitem(o){
-//         var p=o.parentNode.parentNode;
-//          p.parentNode.removeChild(p)
-// }
+ function purchase(){
+     alert("Thanks for purchasing a phone from us");
+ }
+
+//  3. Display 10 student records in table and each row should contain a delete
+//  button. If you click on a button to delete a record, entire row should be
+//  deleted.
 
 
-
-// // 4. Display an image in browser. Change the picture on mouseover and set the
-// // first picture on mouseout.
-
-// function changeimage()
-// {
-//     document.getElementById('changerimage').src='img/m1.jpg';
-// }
-// function previousimage()
-// {
-//     onmouseout=document.getElementById('changerimage').src='img/m3.jpg';
-// }
+ function deleteitem(o){
+         var p=o.parentNode.parentNode;
+          p.parentNode.removeChild(p)
+ }
 
 
 
-// // Show a counter in browser. Counter should increase on click on increase
-// // button and decrease on click on decrease button. And show updated counter
-// // value in browser.
+//  4. Display an image in browser. Change the picture on mouseover and set the
+//  first picture on mouseout.
 
-
-// function increase(){
-//     n=0;
-//     var n=document.getElementById("number").innerHTML;
-//     n=parseInt(n);
-//     n=n+1;
-//     document.getElementById("number").innerHTML=n;
-// }
-// function decrease(){
-//     var n=document.getElementById("number").innerHTML;
-//     n=parseInt(n);
-//     n=n-1;
-//     document.getElementById("number").innerHTML=n;
-// }
-
-
-// ////Create a signup form and display form data in your web
-// ////page on submission.
-
-// function signup()
-// {
-//  var fname=document.getElementById("firstName").Value;
-//  var lname=document.getElementById("lastName").Value;
-//  var email=document.getElementById("Email").Value;
-//  var password=document.getElementById("password").Value;
-// document.getElementById("fname").innerHTML=fname;
-// document.getElementById("lname").innerHTML=lname;
-// document.getElementById("email").innerHTML=email;
-// document.getElementById("pass").innerHTML=password;
-
-
-// }
-
-
-// // . In previous assignment you have created a tabular data
-// // using javascript. Let’s modify that. Create a form which
-// // takes student’s details and show each student detail in
-// // table. Each row of table must contain a delete button and
-// // an edit button. On click on delete button entire row should
-// // be deleted. On click on edit button, a hidden form will
-// // appear with the values of that row.
-
-
-// function edit(){
-//  name=prompt("Enter student name :");
-//  document.getElementById("name").innerHTML=name;
-// }
-
-
-// // i. Get element of id “main-content” and assign them in a variable.
-// // ii. Display all child elements of “main-content” element.
-// // iii. Get all elements of class “render” and show their innerHTML
-// // in browser.
-// // iv. Fill input value whose element id first-name using javascript.
-// // v. Repeat part iv for id ”last-name” and “email”.
+ function changeimage()
+ {
+     document.getElementById('changerimage').src='img/m1.jpg';
+ }
+ function previousimage()
+ {
+     onmouseout=document.getElementById('changerimage').src='img/m3.jpg';
+ }
 
 
 
+// Show a counter in browser. Counter should increase on click on increase
+//  button and decrease on click on decrease button. And show updated counter
+//  value in browser.
 
-// // (i)
+
+ function increase(){
+     n=0;
+     var n=document.getElementById("number").innerHTML;
+     n=parseInt(n);
+     n=n+1;
+     document.getElementById("number").innerHTML=n;
+ }
+ function decrease(){
+     var n=document.getElementById("number").innerHTML;
+     n=parseInt(n);
+     n=n-1;
+     document.getElementById("number").innerHTML=n;
+ }
+
+
+// Create a signup form and display form data in your web
+// page on submission.
+
+ function signup()
+ {
+  var fname=document.getElementById("firstName").Value;
+ var lname=document.getElementById("lastName").Value;
+  var email=document.getElementById("Email").Value;
+ var password=document.getElementById("password").Value;
+ document.getElementById("fname").innerHTML=fname;
+ document.getElementById("lname").innerHTML=lname;
+ document.getElementById("email").innerHTML=email;
+ document.getElementById("pass").innerHTML=password;
+
+
+ }
+
+
+//  . In previous assignment you have created a tabular data
+//  using javascript. Let’s modify that. Create a form which
+//  takes student’s details and show each student detail in
+//  table. Each row of table must contain a delete button and
+//  an edit button. On click on delete button entire row should
+//  be deleted. On click on edit button, a hidden form will
+//  appear with the values of that row.
+
+
+ function edit(){
+  name=prompt("Enter student name :");
+  document.getElementById("name").innerHTML=name;
+}
+
+
+//  i. Get element of id “main-content” and assign them in a variable.
+// ii. Display all child elements of “main-content” element.
+// iii. Get all elements of class “render” and show their innerHTML
+// in browser.
+//  iv. Fill input value whose element id first-name using javascript.
+// v. Repeat part iv for id ”last-name” and “email”.
+
+
+
+
+//  (i)
 const ele = document.getElementById('main-content'); 
 
-// // (ii)
+//  (ii)
 console.log(ele.childNodes);
 
-// // (iii)
+//  (iii)
 const render = document.getElementByClassName('render'); 
 console.log(render);
 
-// // (iv)
+//  (iv)
 document.getElementById('first-name').value = 'testinput';
 
-// // (v)
+//  (v)
 document.getElementById('last-name').value = 'testinput';
 document.getElementById('email').value = 'testinput';
 
 
 
-// // i. What is node type of element having id “form-content”.
-// // ii. Show node type of element having id “lastName” and its child node.
-// // iii. Update child node of element having id “lastName”.
-// // iv. Get First and last child of id “main-content”.
-// // v. Get next and previous siblings of id “lastName”.
-// // vi. Get parent node and node type of element having id “email”
+//  i. What is node type of element having id “form-content”.
+//  ii. Show node type of element having id “lastName” and its child node.
+//  iii. Update child node of element having id “lastName”.
+//  iv. Get First and last child of id “main-content”.
+//  v. Get next and previous siblings of id “lastName”.
+//  vi. Get parent node and node type of element having id “email”
 
-// // (i)
+//  (i)
 document.getElementById('form-content').nodeType; 
 
-// // (ii)
+//  (ii)
 document.getElementById('lastName').nodeType; 
 document.getElementById('lastName').firstElementChild.nodeType; 
 
